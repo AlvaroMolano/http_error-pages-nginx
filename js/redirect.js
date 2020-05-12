@@ -2,7 +2,7 @@ function countdown(remaining) {
 	var	myCountdown;
 
             if(remaining <= 0) {
-            	window.location.replace("http://jcplaboratory.org");
+            	window.location.replace(window.location.host);
 		       	clearTimeout(myCountdown);
             }else {
             	document.getElementById('countdown').innerHTML = remaining;
